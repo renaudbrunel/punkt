@@ -1,2 +1,3 @@
 # punkt
-Fichiers de configuration et notes générales
+Fichiers de configuration et notes générales.
+
