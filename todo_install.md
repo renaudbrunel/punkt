@@ -57,3 +57,11 @@ git remote add punkt pi@192.168.1.30:/home/renaud/git/punkt
 ### Activation des services
 sudo systemctl enable systemd-resolved.service
 
+## Gestion du dual boot windows
+Points d'attention :
+
+* configurer windows pour gérer l'horloge matérielle en UTC (modification de
+  registre),
+* désactiver l'option de démarrage rapide dans windows (options d'alimentation /
+  fonctions des boutons)
+* inclure les options de montage du disque windows dans le fstab
