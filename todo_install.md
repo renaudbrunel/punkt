@@ -64,4 +64,15 @@ Points d'attention :
   registre),
 * désactiver l'option de démarrage rapide dans windows (options d'alimentation /
   fonctions des boutons)
-* inclure les options de montage du disque windows dans le fstab
+
+### montage de la partition windows au démarrage
+
+Ajouter au fichier /etc/fstab :
+# /dev/nvme0n1p3 - partition windows
+UUID=0E54B60E54B5F893                           /mnt/windows    ntfs3           defaults,noatime         0 0
+
+## Utilisation des polices MS Windows
+En dual boot, montage du drive Windows dans /mnt/windows
+
+sudo ln -s /mnt/windows/Windows/Fonts /usr/share/fonts/WindowsFonts
+sudo fc-cache --force
