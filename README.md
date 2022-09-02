@@ -127,6 +127,14 @@ sudo fc-cache --force
 
 
 
+## Pour connecter au compte Office365 professionnel
 
 
+La connexion se fait depuis les paramètres des comptes en ligne Gnome.
+User   : renaud.brunel@groupama.com
+Server : outlook.office365.com
+
+Pour récupérer les mails, tâches, calendriers et contacts sur evolution :
+
+sudo pacman -S evolution evolution-ews
 
